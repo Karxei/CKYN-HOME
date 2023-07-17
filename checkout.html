@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This head section contains all the invisible information about the page -->
+<head>
+  <title>CKYN The Rock - Checkout Page</title>
+  <meta charset="utf-8">
+  <meta name="description" content="A website where you can get to know all about CKYN the rock Theme Park">
+  <meta name="author" content="Team 25">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="refresh" content="600">
+  <meta name="keywords" content="CKYN The rock 'Theme Park'">
+  
+  <link rel="stylesheet" href="css/checkout.css">
+  <!--min css link-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!--kit.fontawesome link-->
+  <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+  <script src="./js/responsive-navbar.js"></script>    
+</head>
+<!-- end of page head -->
+
+<!-- start of page body: visual elements -->
+<body>    
+    <!-- navigation bar elements -->
+    <input type="checkbox" id="check">
+    <nav>
+<!--        Logo for the webpage-->
+        <div class="icon">
+                <b style="color:aliceblue;text-shadow: 0 0 5px rgb(0, 247, 255); ">CKYN The Rock <br> Theme Park</b>
+        </div>
+        
+<!--        Searchbox-->
+        <div class="search_box">
+            <input type="search" placeholder="Search here">
+            <span class="fa fa-search"></span>
+        </div>
+        
+<!--        Menu buttons-->
+         <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tickets.html">Ticket</a></li> 
+            <div class="dropdown">
+               <li class="drpli"><a href="service.html">Services<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content">
+                  <a href="service/restaurant.html">Restauntrant</a>
+                  <a href="service/LodgingPage.html">Lodging</a>
+                  <a href="service/events.html">Events</a>
+                  <a href="service/otherService.html">Other Services</a>
+                  <a href="chatBot.html">Information</a>
+               </div>
+            </div>
+            <div class="dropdown-mobile">
+               <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Services<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content-mobile">
+                  <a href="service.html">All Services</a>
+                  <a href="service/restaurant.html">Restauntrant</a>
+                  <a href="service/LodgingPage.html">Lodging</a>
+                  <a href="service/events.html">Events</a>
+                  <a href="service/otherService.html">Other Services</a>
+                  <a href="chatBot.html">Information</a>
+               </div>
+            </div>
+            <div class="dropdown">
+               <li class="drpli"><a href="attractions.html">Attractions<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content">
+                  <a href="attraction/aquarium.html">Aquarium</a>
+                  <a href="attraction/building.html">Day Maze</a>
+                  <a href="attraction/illusion.html">Illusion</a>
+                  <a href="attraction/maze.html">Labyrinth</a>
+                  <a href="attraction/planet.html">Planet VR</a>
+                  <a href="attraction/rollercoaster.html">Rollercoaster</a>
+               </div>
+            </div>
+            <div class="dropdown-mobile">
+               <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Attractions<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content-mobile">
+                  <a href="attractions.html">All Attractions</a>
+                  <a href="attraction/aquarium.html">Aquarium</a>
+                  <a href="attraction/building.html">Day Maze</a>
+                  <a href="attraction/illusion.html">Illusion</a>
+                  <a href="attraction/maze.html">Labyrinth</a>
+                  <a href="attraction/planet.html">Planet VR</a>
+                  <a href="attraction/rollercoaster.html">Rollercoaster</a>
+               </div>
+            </div>
+            <li><a href="loginSignUP.html">Login/Signup</a></li>
+         </ol>
+        
+ <!--        menu bar when view is shrinked-->
+         <label for="check" class="bar">
+            <span class ="fa fa-bars" id="bars" onclick="open_nav()"></span>
+            <span class="fa fa-times" id="times" onclick="close_nav()"></span>
+         </label>
+    </nav>
+
+
+    <body>
+        <!--payment section starts-->
+        <div class="container">
+
+            <form action="">
+
+                <div class="row">
+
+                    <div class="col">
+                        <h3 class="title">Billing address</h3>
+
+                        <div class="inputBox">
+                            <span>Full Name: </span>
+                            <input type="text" placeholder="Ckyn The Rock">
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Email: </span>
+                            <input type="email" placeholder="example@example.com">
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Address: </span>
+                            <input type="text" placeholder="room - street - locality">
+                        </div>
+
+                        <div class="inputBox">
+                            <span>City: </span>
+                            <input type="text" placeholder="London">
+                        </div>
+
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>State : </span>
+                                <input type="text" placeholder="UK">
+                            </div>
+
+                            <div class="inputBox">
+                                <span>Zip Code: </span>
+                                <input type="text" placeholder="111 111">
+                            </div>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="col">
+                        <h3 class="title">Payment</h3>
+                        
+                        <div class="inputBox">
+                            <span>Cards accepted: </span>
+                            <img src="images/card_img.png" alt="accepted cards image">
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Name On Card: </span>
+                            <input type="text" placeholder="The Rock">
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Credit Card Number: </span>
+                            <input type="number" placeholder="1111-2222-3333-4444">
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Exp Month: </span>
+                            <input type="text" placeholder="April">
+                        </div>
+
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>Exp Year: </span>
+                                <input type="number" placeholder="2022">
+                            </div>
+
+                            <div class="inputBox">
+                                <span>CVV: </span>
+                                <input type="text" placeholder="1234">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <input type="submit" value="Proceed to Checkout" class="modal__button" >
+                
+            <!--js file refers-->
+            <script src="js/main.js"></script>
+
+                </div>
+            </form>
+        </div>
+        <!--payment section ends-->
+    </body>
+
+    <!--js file for menu bar-->
+    <script src="js/menuBar2.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This head section contains all the invisible information about the page -->
+<head>
+  <!--    Title of the webpage displayed in tab -->
+  <title>CKYN The Rock - Home</title>
+  <!--    Metadata for the webpage  -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="description" content="A website where you can get to know all about CKYN the rock Theme Park">
+  <meta name="author" content="Team 25">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="refresh" content="600">
+  <meta name="keywords" content="CKYN The rock 'Theme Park'">
+
+  <!-- toiuch slider-->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+  <!-- Internal stylesheet-->
+  <link rel="stylesheet" href="css/attractions.css">
+
+  <!-- Font used for the website -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <script src="./js/responsive-navbar.js"></script>    
+</head>
+
+<!-- start of page body: visual elements -->
+<body>    
+    <!-- navigation bar elements -->
+    <input type="checkbox" id="check">
+    <nav>
+<!--        Logo for the webpage-->
+        <div class="icon">
+                <b style="color:aliceblue;text-shadow: 0 0 5px rgb(0, 247, 255); ">CKYN The Rock <br> Theme Park</b>
+        </div>
+        
+<!--        Searchbox-->
+        <div class="search_box">
+            <input type="search" placeholder="Search here">
+            <span class="fa fa-search"></span>
+        </div>
+        
+<!--        Menu buttons-->
+         <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tickets.html">Ticket</a></li> 
+            <div class="dropdown">
+               <li class="drpli"><a href="service.html">Services<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content">
+                  <a href="service/restaurant.html">Restauntrant</a>
+                  <a href="service/LodgingPage.html">Lodging</a>
+                  <a href="service/events.html">Events</a>
+                  <a href="service/otherService.html">Other Services</a>
+                  <a href="chatBot.html">Information</a>
+               </div>
+            </div>
+            <div class="dropdown-mobile">
+               <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Services<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content-mobile">
+                  <a href="service.html">All Services</a>
+                  <a href="service/restaurant.html">Restauntrant</a>
+                  <a href="service/LodgingPage.html">Lodging</a>
+                  <a href="service/events.html">Events</a>
+                  <a href="service/otherService.html">Other Services</a>
+                  <a href="chatBot.html">Information</a>
+               </div>
+            </div>
+            <div class="dropdown">
+               <li class="drpli"><a href="attractions.html">Attractions<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content">
+                  <a href="attraction/aquarium.html">Aquarium</a>
+                  <a href="attraction/building.html">Day Maze</a>
+                  <a href="attraction/illusion.html">Illusion</a>
+                  <a href="attraction/maze.html">Labyrinth</a>
+                  <a href="attraction/planet.html">Planet VR</a>
+                  <a href="attraction/rollercoaster.html">Rollercoaster</a>
+               </div>
+            </div>
+            <div class="dropdown-mobile">
+               <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Attractions<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content-mobile">
+                  <a href="attractions.html">All Attractions</a>
+                  <a href="attraction/aquarium.html">Aquarium</a>
+                  <a href="attraction/building.html">Day Maze</a>
+                  <a href="attraction/illusion.html">Illusion</a>
+                  <a href="attraction/maze.html">Labyrinth</a>
+                  <a href="attraction/planet.html">Planet VR</a>
+                  <a href="attraction/rollercoaster.html">Rollercoaster</a>
+               </div>
+            </div>
+            <li><a href="loginSignUP.html">Login/Signup</a></li>
+         </ol>
+        
+ <!--        menu bar when view is shrinked-->
+         <label for="check" class="bar">
+            <span class ="fa fa-bars" id="bars" onclick="open_nav()"></span>
+            <span class="fa fa-times" id="times" onclick="close_nav()"></span>
+         </label>
+    </nav>
+    <!--nav bar ends-->
+
+    <!--Image links refer
+        aquarium=https://www.pinterest.com/pin/artstation-aquarium-gene-raz-von-edler-artist-digital-manipulation-digital-art-fantasy-art-fantasyart-sur--572731277608381380/
+        building=https://www.peakpx.com/en/hd-wallpaper-desktop-eybdw
+        illusion=https://www.pinterest.com/pin/peter-kogler-transforms-rooms-with-hypnotic-installations-featuring-optical-illusions--417075615492143455/
+        maze=https://www.pinterest.com/pin/421579215108883105/
+        planet=https://www.wallpaperflare.com/space-art-planet-sky-water-blue-planet-fantasy-landscape-wallpaper-mwtxd
+        rollercoaster=https://playgroundai.com/post/clge85srd009qs601hksek649
+    -->
+
+    <!--image card layout start-->
+    <div class="container">
+        <!--image row start-->
+        <div class="row">
+            <!--image card1 start-->
+            <div class="image">
+                <img src="images/illusion.jpg" alt="illusion intro image">
+                <div class="details">
+                    <h2>CKYN<span>Mind</span></h2>
+                    <p>A building where is dark and full of illusions and hypnotizing arts to describe
+                        CKYN mind at the first of his life. </p>
+                    <div class="more1">
+                        <a href="attraction/illusion.html" class="read-more">Read<span>More</span></a>
+                        <div class="icon-links">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="attraction/illusion.html"><i class="fas fa-eye"></i></a>
+                            <a href='https://www.youtube.com/watch?v=f6Ix_PREFSY' target="_blank" rel="noopener noreferrer"><i class="fas fa-paperclip"></i></a>
+                        </div>
+
+                    </div>    
+                </div>
+            </div>
+            <!--image card end-->
+             <!--image card2 start-->
+             <div class="image">
+                <img src="images/aquarium.jpg" alt="aquarium intro image">
+                <div class="details">
+                    <h2>Outer World Of <span>CKYN Mind</span></h2>
+                    <p>A building for the kids to play with CKYN theme and an Aquarium about
+                       what CKYN sees through his eyes.
+                    </p>
+                    <div class="more1">
+                        <a href="attraction/aquarium.html" class="read-more">Read<span>More</span></a>
+                        <div class="icon-links">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="attraction/aquarium.html"><i class="fas fa-eye"></i></a>
+                            <a href= 'https://www.youtube.com/watch?v=ifmYts8nJmI' target="_blank" rel="noopener noreferrer"><i class="fas fa-paperclip"></i></a>
+                        </div>
+
+                    </div>    
+                </div>
+            </div>
+            <!--image card end-->
+             <!--image card3 start-->
+             <div class="image">
+                <img src="images/rollercoaster.jpg" alt="rollercoaster intro image">
+                <div class="details">
+                    <h2>The night of <span>CKYN Mind</span></h2>
+                    <p>A rollercoaster ride through CKYN Mind at night and what he sees and how he feels.</p>
+                    <div class="more1">
+                        <a href="attraction/rollercoaster.html" class="read-more">Read<span>More</span></a>
+                        <div class="icon-links">
+                            <a href="#"><i class="fas fa-heart"></i></a>
+                            <a href="attraction/rollercoaster.html"><i class="fas fa-eye"></i></a>
+                            <a href='https://www.youtube.com/watch?v=yBl4ybzjZ68'target="_blank" rel="noopener noreferrer" ><i class="fas fa-paperclip"></i></a>
+
+                        </div>
+
+                    </div>    
+                </div>
+            </div>
+            <!--image card end-->
+             
+             
+        </div>
+    <!--image row end-->
+    <!--image row2 start-->
+    <div class="row">
+        <!--image card4 start-->
+        <div class="image">
+            <img src="images/building.jpg" alt="day building intro image">
+            <div class="details">
+                <h2>The Day Maybe <span>CKYN?</span></h2>
+                <p>Walks around CKYN Theme Park to feel CKYN mind upper layer!
+                   A CKYN themed Playground for kids and enjoy the Day Maze of CKYN!</p>
+                <div class="more1">
+                    <a href="attraction/building.html" class="read-more">Read<span>More</span></a>
+                    <div class="icon-links">
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="attraction/building.html"><i class="fas fa-eye"></i></a>
+                        <a href='https://www.youtube.com/watch?v=1ZqqLqWQtko'target="_blank" rel="noopener noreferrer" ><i class="fas fa-paperclip"></i></a>
+                    </div>
+
+                </div>    
+            </div>
+        </div>
+        <!--image card end-->
+         <!--image card5 start-->
+         <div class="image">
+            <img src="images/planet.jpg" alt="planet vr intro image">
+            <div class="details">
+                <h2>The NoLand <span>Planet</span></h2>
+                <p>Enjoy the view CKYN got from The NoLand Planet by a VR Headset while floating on the lake!</p>
+                <div class="more1">
+                    <a href="attraction/planet.html" class="read-more">Read<span>More</span></a>
+                    <div class="icon-links">
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="attraction/planet.html"><i class="fas fa-eye"></i></a>
+                        <a href='https://www.youtube.com/watch?v=OdtzjDII76Q'target="_blank" rel="noopener noreferrer"><i class="fas fa-paperclip"></i></a>
+                    </div>
+
+                </div>    
+            </div>
+        </div>
+        <!--image card end-->
+         <!--image card6 start-->
+         <div class="image">
+            <img src="images/maze.jpg" alt="labyrinth or maze intro image">
+            <div class="details">
+                <h2>Brumous Cogitation Of <span>CKYN Mind</span></h2>
+                <p>An arcane and mirk labyrinth which will slowly lead you to The Lurking Phantsms. </p>
+                <div class="more1">
+                    <a href="attraction/maze.html" class="read-more">Read<span>More</span></a>
+                    <div class="icon-links">
+                        <a href="#"><i class="fas fa-heart"></i></a>
+                        <a href="attraction/maze.html"><i class="fas fa-eye"></i></a>
+                        <a href='https://www.youtube.com/watch?v=fx50s5kTXJE' target="_blank" rel="noopener noreferrer"><i class="fas fa-paperclip"></i></a>
+                    </div>
+
+                </div>    
+            </div>
+        </div>
+        <!--image card end-->       
+         
+    </div>
+<!--image row end-->    
+    
+    </div>
+    <!--image card layout end-->    
+
+</body>
+</html>

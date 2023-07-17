@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- start of page head: metadata, scripts & stylesheets -->
+<head>  
+  <!-- title and other metadata -->
+  <title>CKYN The Rock - Home</title>    
+  <meta charset="utf-8">
+  <meta name="description" content="A website where you can get to know all about CKYN the rock Theme Park">
+  <meta name="author" content="Team 25">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="refresh" content="600">
+  <meta name="keywords" content="CKYN The rock 'Theme Park'">  
+  <!-- stylesheets and scripts -->
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  <script src="./js/responsive-navbar.js"></script>    
+</head>
+<!-- end of page head -->
+
+<!-- start of page body: visual elements -->
+<body>    
+    <!-- navigation bar elements -->
+    <input type="checkbox" id="check">
+    <nav>
+<!--        Logo for the webpage-->
+        <div class="icon">
+                <b style="color:aliceblue;text-shadow: 0 0 5px rgb(0, 247, 255); ">CKYN The Rock <br> Theme Park</b>
+        </div>
+        
+<!--        Searchbox-->
+        <div class="search_box">
+            <input type="search" placeholder="Search here">
+            <span class="fa fa-search"></span>
+        </div>
+        
+<!--        Menu buttons-->
+         <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tickets.html">Ticket</a></li> 
+            <div class="dropdown">
+               <li class="drpli"><a href="service.html">Services<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content">
+                  <a href="service/restaurant.html">Restauntrant</a>
+                  <a href="service/LodgingPage.html">Lodging</a>
+                  <a href="service/events.html">Events</a>
+                  <a href="service/otherService.html">Other Services</a>
+                  <a href="chatBot.html">Information</a>
+               </div>
+            </div>
+            <div class="dropdown-mobile">
+               <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Services<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content-mobile">
+                  <a href="service.html">All Services</a>
+                  <a href="service/restaurant.html">Restauntrant</a>
+                  <a href="service/LodgingPage.html">Lodging</a>
+                  <a href="service/events.html">Events</a>
+                  <a href="service/otherService.html">Other Services</a>
+                  <a href="chatBot.html">Information</a>
+               </div>
+            </div>
+            <div class="dropdown">
+               <li class="drpli"><a href="attractions.html">Attractions<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content">
+                  <a href="attraction/aquarium.html">Aquarium</a>
+                  <a href="attraction/building.html">Day Maze</a>
+                  <a href="attraction/illusion.html">Illusion</a>
+                  <a href="attraction/maze.html">Labyrinth</a>
+                  <a href="attraction/planet.html">Planet VR</a>
+                  <a href="attraction/rollercoaster.html">Rollercoaster</a>
+               </div>
+            </div>
+            <div class="dropdown-mobile">
+               <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Attractions<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content-mobile">
+                  <a href="attractions.html">All Attractions</a>
+                  <a href="attraction/aquarium.html">Aquarium</a>
+                  <a href="attraction/building.html">Day Maze</a>
+                  <a href="attraction/illusion.html">Illusion</a>
+                  <a href="attraction/maze.html">Labyrinth</a>
+                  <a href="attraction/planet.html">Planet VR</a>
+                  <a href="attraction/rollercoaster.html">Rollercoaster</a>
+               </div>
+            </div>
+            <li><a href="loginSignUP.html">Login/Signup</a></li>
+         </ol>
+        
+ <!--        menu bar when view is shrinked-->
+         <label for="check" class="bar">
+            <span class ="fa fa-bars" id="bars" onclick="open_nav()"></span>
+            <span class="fa fa-times" id="times" onclick="close_nav()"></span>
+         </label>
+    </nav>
+    
+    <!-- CKYN the rock Theme Park header elements: logo and welcome message -->
+    <header> 
+        <!-- CKYN the rock Theme Park main logo -->
+        <img src="images/logo-w.svg" class="responsive" width="360" height="120">
+        <!-- The rock welcome message -->
+        <h1 class="information"> Are you ready for the adventure of CKYN the rock Theme Park? </h1>
+    </header>
+        
+    <!-- start of park images cards layout -->
+    <div class="container">
+        <!-- single row with all the cards -->
+        <div class="row">
+            <!-- card sequence divs -->
+            <div class="image image1">
+                <img src="images/w1-s.jpg" alt="A gray rock castle over a crystalline lake">
+            </div>
+             <div class="image image2">
+                <img src="images/home1-s.jpg" alt="A futuristic metallic arena">
+            </div>
+             <div class="image image3">
+                <img src="images/g2-s.jpg" alt="A huge immersive aquarium">
+            </div>
+             <div class="image image4">
+                <img src="service/image/g8.jpg" alt="A fantastic yellow garden in a cave, with white flowers and hanging cages">
+            </div>
+             <div class="image image5">
+                <img src="service/image/g5.jpg" alt="A gigantic swimming pool with small waterfalls near a rocky surface surrounded by coniferous trees">
+            </div>
+        </div>
+    </div>
+    
+    <!-- CKYN The Rock lemma sums up the image above  -->
+    <div id="ckynintro">
+        <p> It's all about CKYN The Rock from the planet of NoLand, dominated by vast oceans
+            and legendary secrets.</p>
+    </div>
+    
+    <!-- buttons and map parent section -->
+    <section class="buttons-and-map">            
+    <!-- button with the story links to an external -->
+    <a href='https://www.youtube.com/embed/gEzJ-o0gz_E' target="_blank" rel="noopener noreferrer">
+    <button class="btn btn--story">
+        Watch the CKYN story
+        </button>
+    </a>
+    <!-- chat button links to the chatbot page -->
+    <button class="btn btn--information" onclick ="window.location.href='chatBot.html';">
+        Let's chat!
+    </button>
+    <!-- map div and section -->
+    <div class="mapdiv">
+    <section class="map top">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13045.006954547574!2d137.0812481!3d35.1752777!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600367450203d0b3%3A0x36164b7a69c5128b!2sGhibli%20Park!5e0!3m2!1sen!2smm!4v1687886947928!5m2!1sen!2smm" width="600" height="450" style="border:0;" 
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+    </div>        
+    </section>
+
+<!-- footer section with contact information, links to social networks and accepted payment methods-->
+<section class="footer">
+
+   <div class="box-container">
+      <!-- contact information -->
+      <div class="box">
+          <h3>Contact</h3>
+         <a href="tel:1234567890"><i class="fas fa-phone"></i> +123-456-7890</a>
+         <a href="tel:1112223333"><i class="fas fa-phone"></i> +111-222-3333</a>
+         <a href="team25@gmail.com"><i class="fas fa-envelope"></i> team25@gmail.com</a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i>3000 Grand Ave, Ciam Grove, Solon State FL 090506</a>
+      </div>       
+      <!-- links to social media -->
+      <div class="box">
+          <h3>Follow us</h3>
+         <a href="#">Facebook <i class="fab fa-facebook-f"></i></a>
+         <a href="#">Twitter <i class="fab fa-twitter"></i></a>
+         <a href="#">Instagram <i class="fab fa-instagram"></i></a>
+         <a href="#">Linkedin <i class="fab fa-linkedin"></i></a>
+      </div>
+      <!-- accepted payment methods -->
+      <div class="box">
+        <h3>Accepted payment methods</h3>
+        <div class="payment grid">
+          <img src="https://img.icons8.com/color/48/000000/visa.png" />
+          <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+          <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+          <img src="https://img.icons8.com/fluency/48/000000/amex.png" />
+        </div>
+      </div>              
+   </div>
+
+</section>
+</body>
+<!-- end of page body -->
+</html>

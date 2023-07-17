@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This head section contains all the invisible information about the page -->
+<head>
+  <title>CKYN The Rock - Home</title>
+<!--    Metadata for the webpage-->
+  <meta charset="utf-8">
+  <meta name="description" content="A website where you can get to know all about CKYN the rock Theme Park">
+  <meta name="author" content="Team 25">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="refresh" content="600">
+  <meta name="keywords" content="CKYN The rock 'Theme Park'">
+    
+<!--    Bootstrap stylesheet-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+<!--    Internal stylesheet-->
+  <link rel="stylesheet" href="css/tickets.css" >
+    
+<!--    +- buttons for cart-->
+  <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+
+    
+  <script src="./js/responsive-navbar.js"></script>
+ 
+</head>
+
+<!-- This body section contains the structure for all the visble content -->
+<body>
+    <input type="checkbox" id="check">
+    <nav>
+<!--        Logo for the webpage-->
+        <div class="icon">
+                <b style="color:aliceblue;text-shadow: 0 0 5px rgb(0, 247, 255); ">CKYN The Rock <br> Theme Park</b>
+        </div>
+        
+<!--        Searchbox-->
+        <div class="search_box">
+            <input type="search" placeholder="Search here">
+            <span class="fa fa-search"></span>
+        </div>
+        
+<!--        Menu buttons-->
+         <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tickets.html">Ticket</a></li> 
+            <div class="dropdown">
+               <li class="drpli"><a href="service.html">Services<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content">
+                  <a href="service/restaurant.html">Restauntrant</a>
+                  <a href="service/LodgingPage.html">Lodging</a>
+                  <a href="service/events.html">Events</a>
+                  <a href="service/otherService.html">Other Services</a>
+                  <a href="chatBot.html">Information</a>
+               </div>
+            </div>
+            <div class="dropdown-mobile">
+               <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Services<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content-mobile">
+                  <a href="service.html">All Services</a>
+                  <a href="service/restaurant.html">Restauntrant</a>
+                  <a href="service/LodgingPage.html">Lodging</a>
+                  <a href="service/events.html">Events</a>
+                  <a href="service/otherService.html">Other Services</a>
+                  <a href="chatBot.html">Information</a>
+               </div>
+            </div>
+            <div class="dropdown">
+               <li class="drpli"><a href="attractions.html">Attractions<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content">
+                  <a href="attraction/aquarium.html">Aquarium</a>
+                  <a href="attraction/building.html">Day Maze</a>
+                  <a href="attraction/illusion.html">Illusion</a>
+                  <a href="attraction/maze.html">Labyrinth</a>
+                  <a href="attraction/planet.html">Planet VR</a>
+                  <a href="attraction/rollercoaster.html">Rollercoaster</a>
+               </div>
+            </div>
+            <div class="dropdown-mobile">
+               <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Attractions<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content-mobile">
+                  <a href="attractions.html">All Attractions</a>
+                  <a href="attraction/aquarium.html">Aquarium</a>
+                  <a href="attraction/building.html">Day Maze</a>
+                  <a href="attraction/illusion.html">Illusion</a>
+                  <a href="attraction/maze.html">Labyrinth</a>
+                  <a href="attraction/planet.html">Planet VR</a>
+                  <a href="attraction/rollercoaster.html">Rollercoaster</a>
+               </div>
+            </div>
+            <li><a href="loginSignUP.html">Login/Signup</a></li>
+         </ol>
+        
+<!--        menu bar when view is shrinked-->
+         <label for="check" class="bar">
+            <span class ="fa fa-bars" id="bars" onclick="open_nav()"></span>
+            <span class="fa fa-times" id="times" onclick="close_nav()"></span>
+         </label>
+    </nav>
+    
+    <br>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col mx-auto">
+                    
+<!--                    Information for the tickets-->
+                   <h2 class="px-5 p-2">Tickets and Packages</h2>
+                   <h3>Family Package</h3>
+                   <p>For 2 adults and 1-3 children under the age of 12. For the children we offer 
+                       free access to every attraction and 10 % discount in the CKYN restaurant.
+                   </p>
+
+                   <h3>Friends Package</h3>
+                   <p>A group ticket for 4-8 persons. 15 % discount in the CKYN restaurant.</p>
+
+                   <h3>Not Alone Ticket</h3>
+                   <p>An option for an exciting date! Free dessert in the CKYN dessert shop.
+                   </p>
+
+                   <h3>Blue Package</h3>
+                   <p>The holder of the Blue Package has the possibility to share access with 3 other people 
+                       and will get 20% discount in the CKYN restaurant. Valid for 5 entries for 4 months.
+                   </p>
+
+                   <h3>The Rock</h3>
+                   <p>Single ticket with free entrance to the aquarium.</p>
+                   <h3>Opening hours</h3>
+                   <p>Monday-Tuesday = 12 pm to 7 pm</p>
+                   <p>Wednesday-Thursday = 10 am to 7 pm</p>
+                   <p>Friday-Sunday = 9 am to 9 pm</p>
+                </div>
+        
+
+<!--                Cart details-->
+                   <div class="col mx-auto">
+                      <div class="cart">
+                          
+<!--                          Family package details -->
+                         <div class="cart-item">
+                            <div class="row">
+                               <div class="col-md-7 center-item">
+                                  <img src="images/family.png" alt="Family package icon">
+                                  <h5>Family Package</h5>
+                               </div>
+
+                               <div class="col-md-5 center-item">
+                                  <div class="input-group number-spinner">
+                                     <button id="case1-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                                     <input id="case1-number" type="number" min="0" class="form-control text-center" value="0">
+                                     <button id="case1-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                                  </div>
+                                  <h5><span id="case1-total">$50</span> </h5>
+
+                               </div>
+                            </div>
+                         </div>
+
+                          
+<!--                          Friends Package details-->
+                         <div class="cart-item">
+                            <div class="row">
+                               <div class="col-md-7 center-item mx-auto">
+                                  <img src="images/friends.png" alt="Friends package icon">
+                                  <h5>Friends Package</h5>
+                               </div>
+                               <div class="col-md-5 center-item">
+                                  <div class="input-group number-spinner">
+                                     <button id="case2-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                                     <input id="case2-number" type="number" min="0" class="form-control text-center" value="0">
+                                     <button  id="case2-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+
+                                  </div>
+                                   <h5> $ <span id="case2-total">60</span> </h5>
+
+                               </div>
+                            </div>
+                         </div>
+
+                          
+<!--                          Not Alone ticket details-->
+                        <div class="cart-item">
+                            <div class="row">
+                               <div class="col-md-7 center-item mx-auto">
+                                  <img src="images/notAlone.png" alt="Not alone package icon">
+                                  <h5>Not Alone Ticket</h5>
+                               </div>
+                               <div class="col-md-5 center-item">
+                                  <div class="input-group number-spinner">
+                                     <button id="case3-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                                     <input id="case3-number" type="number" min="0" class="form-control text-center" value="0">
+                                     <button  id="case3-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                                  </div>
+                                   <h5> $ <span id="case3-total">30</span> </h5>
+                                </div>
+                               
+                            </div>
+                         </div>
+
+                          
+<!--                          Blue Package details-->
+                        <div class="cart-item">
+                            <div class="row">
+                               <div class="col-md-7 center-item mx-auto">
+                                  <img src="images/bluePackage.png" alt="Blue package icon">
+                                  <h5>Blue Package</h5>
+                               </div>
+                               <div class="col-md-5 center-item">
+                                  <div class="input-group number-spinner">
+                                     <button id="case4-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                                     <input id="case4-number" type="number" min="0" class="form-control text-center" value="0">
+                                     <button  id="case4-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                                  </div>
+                                   <h5> $ <span id="case4-total">300</span> </h5>
+                                </div>
+                               
+                            </div>
+                         </div>
+                          
+                          
+<!--                          The Rock ticket details-->
+                         <div class="cart-item">
+                            <div class="row">
+                               <div class="col-md-7 center-item mx-auto">
+                                  <img src="images/theRock.png" alt="The Rock package icon">
+                                  <h5>The Rock</h5>
+                               </div>
+                               <div class="col-md-5 center-item">
+                                  <div class="input-group number-spinner">
+                                     <button id="case5-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                                     <input id="case5-number" type="number" min="0" class="form-control text-center" value="0">
+                                     <button  id="case5-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+                                  </div>
+                                   <h5> $ <span id="case5-total">10</span> </h5>
+                                </div>
+                               
+                            </div>
+                         </div>
+
+                          
+<!--                          Cart total details-->
+                         <div class="cart-item">
+                            <div class="row g-2">
+
+                               <div class="col-6">
+                                  <h5>Subtotal: </h5>
+                                  <h5>Tax:</h5>
+                                  <h5>Total:</h5>
+                               </div>
+
+                               <div class="col-6 status">
+                                  <h5>$<span id="sub-total">0</span></h5>
+                                  <h5>$<span id="tax-amount">0</span></h5>
+                                  <h5>$<span id="total-price">0</span></h5>
+                               </div>
+
+                            </div>
+                         </div>
+                          
+<!--                          Check-out button-->
+                         <div class="col-md-12 pt-1 pb-4">
+                            <button type="button" class="btn btn-success check-out" onclick ="window.location.href='checkout.html';">Check Out</button>
+                         </div>
+                          <br>
+                      </div>
+                   </div>
+                </div>
+            </div> 
+        
+<!--        JS Script for responsive cart-->
+     <script src="js/app.js"></script>
+    </section>
+</body>
+</html>    

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Events Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/events.css" type="text/css">
+  <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+  <script src="./js/responsive-navbar.js"></script>    
+  </head>
+  <!-- end of page head -->
+  
+  <!-- start of page body: visual elements -->
+  <body>    
+      <!-- navigation bar elements -->
+      <input type="checkbox" id="check">
+      <nav>
+  <!--        Logo for the webpage-->
+          <div class="icon">
+                  <b style="color:aliceblue;text-shadow: 0 0 5px rgb(0, 247, 255); ">CKYN The Rock <br> Theme Park</b>
+          </div>
+          
+  <!--        Searchbox-->
+          <div class="search_box">
+              <input type="search" placeholder="Search here">
+              <span class="fa fa-search"></span>
+          </div>
+          
+  <!--        Menu buttons-->
+  <ol>
+   <li><a href="../index.html">Home</a></li>
+   <li><a href="../tickets.html">Ticket</a></li> 
+   <div class="dropdown">
+      <li class="drpli"><a href="../service.html">Services<i class="fa fa-caret-down"></i></a></li>
+      <div class="dropdown-content">
+         <a href="restaurant.html">Restauntrant</a>
+         <a href="LodgingPage.html">Lodging</a>
+         <a href="events.html">Events</a>
+         <a href="otherService.html">Other Services</a>
+         <a href="../chatBot.html">Information</a>
+      </div>
+   </div>
+   <div class="dropdown-mobile">
+      <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Services<i class="fa fa-caret-down"></i></a></li>
+      <div class="dropdown-content-mobile">
+         <a href="../service.html">All Services</a>
+         <a href="restaurant.html">Restauntrant</a>
+         <a href="LodgingPage.html">Lodging</a>
+         <a href="events.html">Events</a>
+         <a href="otherService.html">Other Services</a>
+         <a href="../chatBot.html">Information</a>
+      </div>
+   </div>
+   <div class="dropdown">
+      <li class="drpli"><a href="../attractions.html">Attractions<i class="fa fa-caret-down"></i></a></li>
+      <div class="dropdown-content">
+         <a href="../attraction/aquarium.html">Aquarium</a>
+         <a href="../attraction/building.html">Day Maze</a>
+         <a href="../attraction/illusion.html">Illusion</a>
+         <a href="../attraction/maze.html">Labyrinth</a>
+         <a href="../attraction/planet.html">Planet VR</a>
+         <a href="../attraction/rollercoaster.html">Rollercoaster</a>
+      </div>
+   </div>
+   <div class="dropdown-mobile">
+      <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Attractions<i class="fa fa-caret-down"></i></a></li>
+      <div class="dropdown-content-mobile">
+         <a href="../attractions.html">All Attractions</a>
+         <a href="../attraction/aquarium.html">Aquarium</a>
+         <a href="../attraction/building.html">Day Maze</a>
+         <a href="../attraction/illusion.html">Illusion</a>
+         <a href="../attraction/maze.html">Labyrinth</a>
+         <a href="../attraction/planet.html">Planet VR</a>
+         <a href="../attraction/rollercoaster.html">Rollercoaster</a>
+      </div>
+   </div>
+   <li><a href="../loginSignUP.html">Login/Signup</a></li>
+</ol>
+
+<!--        menu bar when view is shrinked-->
+<label for="check" class="bar">
+   <span class ="fa fa-bars" id="bars" onclick="open_nav()"></span>
+   <span class="fa fa-times" id="times" onclick="close_nav()"></span>
+</label>
+</nav>
+
+
+ <!-- Event Info -->
+ <section class="services">
+    <div class="container">
+       <div class="row">
+           <div class="section-title">
+            <h1 style="color:rgb(254, 254, 254);">Events</h1>
+           </div>
+       </div>
+       <div class="row">
+          <div class="service-items">
+              <div class="row">
+                 <!-- item start -->
+                 <div class="item">
+                    <div class="item-inner">
+                       <h2>Music Festival</h2>
+                       <p>Music Festival featuring 'rock' by popular musicians</p>
+                       <h3>Date : 14th July to 16th July, 2023</h3>
+                       
+                       <div class="read-more-cont">
+                          <p>Music Festival</p>
+                          <p>Special music festival and the theme is of course, 'rock'!<br>Please join the event at the main stage in the park<br></p>
+                          <p>Time : 10 am to 7 pm</p>
+                          <p></p>
+                          <img src="image/musicfes.jpg" alt="music festival">
+                       </div>
+                       <button class="btn" type="button">Read More</button>
+                    </div>
+                 </div>
+                 <!-- item end -->
+                 <!-- item start -->
+                 <div class="item">
+                    <div class="item-inner">
+                       <h2>Kids & Families Event</h2>
+                       <p>Special event for kids under 12 years old at rocky playground</p>
+                     
+                       <h3>20th July to 23rd July, 2023</h3>
+                       <div class="read-more-cont">
+                         <p>Kids & Families Event</p>
+                         <p>Four-days special event for junior superstars. From sand-and-rock playground to rock wall for kids, all families are welcomed by our rock&play specialists!</p>
+                         <p>Time : 1pm to 6pm for every event day</p>
+                         <img src="image/familyevent.jpg" alt="family event">
+                       </div>
+                       <button class="btn" type="button">Read More</button>
+                    </div>
+                 </div>
+                 <!-- item end -->
+                 <!-- item start -->
+                 <div class="item">
+                    <div class="item-inner">
+                       <h2>Global Rock Summit</h2>
+                       <p>Opportunities to meet all professional organizations deepend your knowledge! Meet pros - Rock, Felsen, Rocha, and Iwa.</p>
+                       <h3>Date: 14th August to 16th August, 2023</h3>
+                       <div class="read-more-cont">
+                        <p>Global Rock Summit</p>
+                        <p>Annual Global Rock Summit coming again! <br>Please reserve your ticket to attend world top speakers and practioners in the area</p>
+                        <p>Time : 2 pm to 7 pm for Day 1&2, 1pm to 6pm for Day 3</p>
+                        <img src="image/globalsummit.jpg" alt="global summit">
+                       </div>
+                       <button class="btn" type="button">Read More</button>
+                    </div>
+                 </div>
+
+              </div>
+          </div>
+       </div>
+    </div>
+ </section>
+
+  <!-- read more popup box start -->
+   <div class="popup-box">
+      <div class="popup-content">
+          <div class="popup-header">
+             <h3></h3>
+             <span class="popup-close-icon">&times;</span>
+          </div>
+          <div class="popup-body">
+            
+          </div>
+          <div class="popup-footer">
+            <button class="btn popup-close-btn" onclick ="window.location.href='eventTicket.html';">Buy a Ticket</button>
+          </div>
+      </div>
+   </div>
+  <!-- read more popup box end -->
+
+<!--js file refers for other service section-->  
+<script src="js/otherService.js"></script>
+<!--js file for menu bar-->
+<script src="js/menuBar2.js"></script>
+
+</body>
+</html>

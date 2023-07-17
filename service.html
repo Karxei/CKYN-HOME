@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="refresh" content="600">
+    <title>Services Page</title>
+    <!-- Font Awesome CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/service.css" />
+    <script src="./js/responsive-navbar.js"></script>    
+  </head>
+  
+  <!-- start of page body: visual elements -->
+  <body>    
+      <!-- navigation bar elements -->
+      <input type="checkbox" id="check">
+      <nav>
+  <!--        Logo for the webpage-->
+          <div class="icon">
+                  <b style="color:aliceblue;text-shadow: 0 0 5px rgb(0, 247, 255); ">CKYN The Rock <br> Theme Park</b>
+          </div>
+          
+  <!--        Searchbox-->
+          <div class="search_box">
+              <input type="search" placeholder="Search here">
+              <span class="fa fa-search"></span>
+          </div>
+          
+  <!--        Menu buttons-->
+           <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="tickets.html">Ticket</a></li> 
+              <div class="dropdown">
+                 <li class="drpli"><a href="service.html">Services<i class="fa fa-caret-down"></i></a></li>
+                 <div class="dropdown-content">
+                    <a href="service/restaurant.html">Restauntrant</a>
+                    <a href="service/LodgingPage.html">Lodging</a>
+                    <a href="service/events.html">Events</a>
+                    <a href="service/otherService.html">Other Services</a>
+                    <a href="chatBot.html">Information</a>
+                 </div>
+              </div>
+              <div class="dropdown-mobile">
+                 <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Services<i class="fa fa-caret-down"></i></a></li>
+                 <div class="dropdown-content-mobile">
+                    <a href="service.html">All Services</a>
+                    <a href="service/restaurant.html">Restauntrant</a>
+                    <a href="service/LodgingPage.html">Lodging</a>
+                    <a href="service/events.html">Events</a>
+                    <a href="service/otherService.html">Other Services</a>
+                    <a href="chatBot.html">Information</a>
+                 </div>
+              </div>
+              <div class="dropdown">
+                 <li class="drpli"><a href="attractions.html">Attractions<i class="fa fa-caret-down"></i></a></li>
+                 <div class="dropdown-content">
+                    <a href="attraction/aquarium.html">Aquarium</a>
+                    <a href="attraction/building.html">Day Maze</a>
+                    <a href="attraction/illusion.html">Illusion</a>
+                    <a href="attraction/maze.html">Labyrinth</a>
+                    <a href="attraction/planet.html">Planet VR</a>
+                    <a href="attraction/rollercoaster.html">Rollercoaster</a>
+                 </div>
+              </div>
+              <div class="dropdown-mobile">
+                 <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Attractions<i class="fa fa-caret-down"></i></a></li>
+                 <div class="dropdown-content-mobile">
+                    <a href="attractions.html">All Attractions</a>
+                    <a href="attraction/aquarium.html">Aquarium</a>
+                    <a href="attraction/building.html">Day Maze</a>
+                    <a href="attraction/illusion.html">Illusion</a>
+                    <a href="attraction/maze.html">Labyrinth</a>
+                    <a href="attraction/planet.html">Planet VR</a>
+                    <a href="attraction/rollercoaster.html">Rollercoaster</a>
+                 </div>
+              </div>
+              <li><a href="loginSignUP.html">Login/Signup</a></li>
+           </ol>
+          
+   <!--        menu bar when view is shrinked-->
+           <label for="check" class="bar">
+              <span class ="fa fa-bars" id="bars" onclick="open_nav()"></span>
+              <span class="fa fa-times" id="times" onclick="close_nav()"></span>
+           </label>
+      </nav>
+
+    <!--service section starts-->
+    <div class="container">
+
+        <h1 class="heading">our services</h1>
+    
+        <div class="box-container">
+            <!--service box 1--> 
+            <div class="box">
+                <img src="images/restaurant.png" alt="food service section logo">
+                <h3>CKYN Food Service</h3>
+                <p>CKYN Themed Restaurant And Dessert 
+                   Shop. and, other more restaurants and dessert shops.
+                </p>
+                <a href="service/restaurant.html" class="btn">read more</a>
+            </div>
+
+            <!--service box 2-->
+            <div class="box">
+                <img src="images/lodging.png" alt="lodging service section logo">
+                <h3>CKYN Themed Lodging</h3>
+                <p>Here You can find about CKYN themed Lodging which is a Fantasy HomeLand. </p>
+                <a href="service/LodgingPage.html" class="btn">read more</a>
+            </div>
+
+            <!--service box 3-->
+            <div class="box">
+                <img src="images/event.png" alt="event section logo">
+                <h3>About Events</h3>
+                <p>Find out about the events which are gonna be held in CKYN Theme Park.</p>
+                <a href="service/events.html" class="btn">read more</a>
+            </div>
+            
+            <!--service box 4-->
+            <div class="box">
+                <img src="images/guide.png" alt="guide to other service section logo">
+                <h3>Other services</h3>
+                <p>Here You can find about other services we offer.</p>
+                <a href="service/otherService.html" class="btn">read more</a>
+            </div>
+    
+        </div>
+    
+    </div>
+    <!--service section ends-->
+    
+  </body>
+</html>

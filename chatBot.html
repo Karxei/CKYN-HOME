@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+
+    <!--kit fontawesom link-->
+    <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+    
+    <!--css files-->
+    <link rel="stylesheet" href="css/chatBotCss/chat.css">
+    <link rel="stylesheet" href="css/chatBotCss/home.css">
+    <!--min css link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/responsive-navbar.js"></script>    
+  </head>
+  <!-- end of page head -->
+  
+  <!-- start of page body: visual elements -->
+  <body>    
+      <!-- navigation bar elements -->
+      <input type="checkbox" id="check">
+      <nav>
+  <!--        Logo for the webpage-->
+          <div class="icon">
+                  <b style="color:aliceblue;text-shadow: 0 0 5px rgb(0, 247, 255); ">CKYN The Rock <br> Theme Park</b>
+          </div>
+          
+  <!--        Searchbox-->
+          <div class="search_box">
+              <input type="search" placeholder="Search here">
+              <span class="fa fa-search"></span>
+          </div>
+          
+  <!--        Menu buttons-->
+           <ol>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="tickets.html">Ticket</a></li> 
+              <div class="dropdown">
+                 <li class="drpli"><a href="service.html">Services<i class="fa fa-caret-down"></i></a></li>
+                 <div class="dropdown-content">
+                    <a href="service/restaurant.html">Restauntrant</a>
+                    <a href="service/LodgingPage.html">Lodging</a>
+                    <a href="service/events.html">Events</a>
+                    <a href="service/otherService.html">Other Services</a>
+                    <a href="chatBot.html">Information</a>
+                 </div>
+              </div>
+              <div class="dropdown-mobile">
+                 <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Services<i class="fa fa-caret-down"></i></a></li>
+                 <div class="dropdown-content-mobile">
+                    <a href="service.html">All Services</a>
+                    <a href="service/restaurant.html">Restauntrant</a>
+                    <a href="service/LodgingPage.html">Lodging</a>
+                    <a href="service/events.html">Events</a>
+                    <a href="service/otherService.html">Other Services</a>
+                    <a href="chatBot.html">Information</a>
+                 </div>
+              </div>
+              <div class="dropdown">
+                 <li class="drpli"><a href="attractions.html">Attractions<i class="fa fa-caret-down"></i></a></li>
+                 <div class="dropdown-content">
+                    <a href="attraction/aquarium.html">Aquarium</a>
+                    <a href="attraction/building.html">Day Maze</a>
+                    <a href="attraction/illusion.html">Illusion</a>
+                    <a href="attraction/maze.html">Labyrinth</a>
+                    <a href="attraction/planet.html">Planet VR</a>
+                    <a href="attraction/rollercoaster.html">Rollercoaster</a>
+                 </div>
+              </div>
+              <div class="dropdown-mobile">
+                 <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Attractions<i class="fa fa-caret-down"></i></a></li>
+                 <div class="dropdown-content-mobile">
+                    <a href="attractions.html">All Attractions</a>
+                    <a href="attraction/aquarium.html">Aquarium</a>
+                    <a href="attraction/building.html">Day Maze</a>
+                    <a href="attraction/illusion.html">Illusion</a>
+                    <a href="attraction/maze.html">Labyrinth</a>
+                    <a href="attraction/planet.html">Planet VR</a>
+                    <a href="attraction/rollercoaster.html">Rollercoaster</a>
+                 </div>
+              </div>
+              <li><a href="loginSignUP.html">Login/Signup</a></li>
+           </ol>
+          
+   <!--        menu bar when view is shrinked-->
+           <label for="check" class="bar">
+              <span class ="fa fa-bars" id="bars" onclick="open_nav()"></span>
+              <span class="fa fa-times" id="times" onclick="close_nav()"></span>
+           </label>
+      </nav>
+
+    <!--information section starts-->
+    <div class="container">
+        <div class="box-container">
+            <!--service box 1--> 
+            <div class="box">
+                <img src="images/ticket.png" alt="ticket logo">
+                <h3><a href="tickets.html" class="btn">Theme Park Ticket</a></h3>
+                <h3><a href="service/eventTicket.html" class="btn">Event Ticket</a></h3>
+                <p>Find more about Event Ticket and CKYN Theme Park Ticket.</p>
+            </div>
+
+            <!--service box 2-->
+            <div class="box">
+                <img src="images/attraction.png" alt="attraction section logo">
+                <h3><a href="attractions.html" class="btn">Attractions</a></h3>
+                <p>Find out the most intriguing places in CKYN Theme Park. </p>
+            </div>
+
+            <!--service box 3--> 
+            <div class="box">
+                <img src="images/restaurant.png" alt="restaurant section logo">
+                <h3><a href="service/restaurant.html" class="btn">CKYN Food Service</a></h3>
+                <p>CKYN Themed Restaurant And Dessert 
+                   Shop. and, other more restaurants and dessert shops.
+                </p>
+            </div>
+
+            <!--service box 4-->
+            <div class="box">
+                <img src="images/lodging.png" alt="lodging section logo">
+                <h3><a href="service/LodgingPage.html" class="btn">CKYN Lodging</a></h3>
+                <p>Find more about CKYN themed Lodging which is a Fantasy HomeLand. </p>
+            </div>
+
+            <!--service box 5-->
+            <div class="box">
+                <img src="images/event.png" alt="event section logo">
+                <h3><a href="service/events.html" class="btn">About Events</a></h3>
+                <p>Find out about the events which are gonna be held in CKYN Theme Park.</p>
+            </div>
+            
+            <!--service box 6-->
+            <div class="box">
+                <h3><a href="service/otherService.html" class="btn">Other services</a></h3>
+                <p>Here You can find about other services we offer.</p>
+                <img src="images/guide.png" alt="other service section logo">
+            </div>
+    
+        </div>
+    
+    </div>
+    <!--information section ends-->
+
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Close or Open Chat Bar
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--CHAT BOT ENDS-->
+
+<!--js file for menubar-->
+<script src="js/menuBar2.js"></script>
+
+</body>
+
+<!--jquery min js-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!--js files refer-->
+<script src="js/responses.js"></script>
+<script src="js/chat.js"></script>
+
+
+</html>

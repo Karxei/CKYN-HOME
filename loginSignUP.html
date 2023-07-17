@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="refresh" content="600">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    <link rel="stylesheet" href="css/loginSignUp.css" />
+    <title>Log In /Sign Up Page</title>
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <!-- end of page head -->
+  
+  <!-- start of page body: visual elements -->
+  <body>    
+        <!--Header Menu bar starts-->
+    <nav>
+      <div class="navbar">
+        <i class='bx bx-menu'></i>
+        <div class="logo">
+          <b style="color:aliceblue;text-shadow: 0 0 5px rgb(8, 247, 255);">CKYN The Rock Theme Park</b>
+        </div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">Menu</span>
+            <i class='bx bx-x' ></i>
+          </div>
+          <ul class="links">
+            <li><a href="index.html">HOME</a></li>
+            <!--attraction section and sub sections-->
+            <li>
+              <a href="attractions.html">Attractions</a>
+              <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="attraction/illusion.html">Illusion</a></li>
+                <li><a href="attraction/aquarium.html">Aquarium</a></li>
+                <li><a href="attraction/rollercoaster.html">Rollercoaster</a></li>
+                <li class="more">
+                  <span><a href="#">More</a>
+                  <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                </span>
+                  <ul class="more-sub-menu sub-menu">
+                    <li><a href="attraction/building.html">Day Maze</a></li>
+                    <li><a href="attraction/planet.html">Planet VR</a></li>
+                    <li><a href="attraction/maze.html">Labyrinth</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+           <!--service section and sub sections-->
+           <li>
+              <a href="service.html">Services & Events</a>
+              <i class='bx bxs-chevron-down js-arrow arrow '></i>
+              <ul class="js-sub-menu sub-menu">
+                <li><a href="service/LodgingPage.html">Lodging</a></li>
+                <li><a href="service/restaurant.html">Restauntrant</a></li>
+                <li><a href="service/events.html">Events</a></li>
+                <li><a href="service/eventTicket.html">Event Ticket</a></li>
+                <li><a href="service/otherService.html">Other Services</a></li>
+              </ul>
+            </li>
+
+            <!--Information section-->
+            <li><a href="chatBot.html">Information</a></li>
+
+            <!--Ticket section-->
+            <li><a href="tickets.html">Tickets</a></li>
+
+            <!--login sign up section-->
+            <li><a href="loginSignUP.html">Login/Signup</a></li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <i class='bx bx-search'></i>
+          <div class="input-box">
+            <input type="text" placeholder="Search...">
+          </div>
+        </div>
+      </div>
+    </nav>
+  <!--Header Menu bar ends-->
+
+
+    <!--signIN/SignUP section starts-->
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <!--Login/SignIn starts-->
+          <form action="#" class="sign-in-form">
+            <h2 class="title">LogIn</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          <!--Login/SignIn ends-->
+
+          <!--SignUP starts-->
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+            <!--SignUP ends-->
+          </form>
+        </div>
+      </div>
+      
+      <!--LogIN above section intro starts-->
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New To CKYN Theme Park ?</h3>
+            <p>
+              Try to sign up for the adventures of CKYN. Find out the truth about CKYN ! 
+              Let's start the thrilling Journey with us!
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+          <img src="images/log1.svg" class="image" alt="logIn section logo" />
+        </div>
+        <!--LogIN above section intro ends-->
+        
+        <!--SignUP above section intro starts-->
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>Already Omniscient one ?</h3>
+            <p>
+              Keep up the Journey with CKYN and be an omniscient watcher! Let's visit to 
+              the CKYN mind and find out the truth about his existence and other mysteries.
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+          <img src="images/register1.svg" class="image" alt="register section logo" />
+        </div>
+      </div>
+    </div>
+    <!--SignUP above section intro ends-->
+
+<!--signIN/ signUP section ends-->
+
+<!--Js file refers-->
+<script src="js/loginSignUp.js"></script>
+<!--js file for menu bar-->
+<script src="js/menuBar2.js"></script>
+
+  </body>
+</html>
