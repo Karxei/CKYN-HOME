@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- This head section contains all the invisible information about the page -->
+<head>
+  <title>CKYN The Rock - Home</title>
+  <meta charset="utf-8">
+  <meta name="description" content="A website where you can get to know all about CKYN the rock Theme Park">
+  <meta name="author" content="Team 25">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="refresh" content="600">
+  <meta name="keywords" content="CKYN The rock 'Theme Park'">
+  <!--css file-->
+  <link rel="stylesheet" href="storyCss/illusion.css">
+  <!--kit fontawesome link-->
+  <script src="https://kit.fontawesome.com/67c66657c7.js"></script>
+<!--js file for nav bar-->
+<script src="./js/responsive-navbar.js"></script>   
+
+</head>
+<!-- end of page head -->
+
+<!-- start of page body: visual elements -->
+<body>    
+    <!-- navigation bar elements -->
+    <input type="checkbox" id="check">
+    <nav>
+<!--        Logo for the webpage-->
+        <div class="icon">
+                <b style="color:aliceblue;text-shadow: 0 0 5px rgb(204, 255, 0); ">CKYN The Rock <br> Theme Park</b>
+        </div>
+        
+<!--        Searchbox-->
+        <div class="search_box">
+            <input type="search" placeholder="Search here">
+            <span class="fa fa-search"></span>
+        </div>
+        
+<!--        Menu buttons-->
+         <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../tickets.html">Ticket</a></li> 
+            <div class="dropdown">
+               <li class="drpli"><a href="../service.html">Services<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content">
+                  <a href="../service/restaurant.html">Restauntrant</a>
+                  <a href="../service/LodgingPage.html">Lodging</a>
+                  <a href="../service/events.html">Events</a>
+                  <a href="../service/otherService.html">Other Services</a>
+                  <a href="../chatBot.html">Information</a>
+               </div>
+            </div>
+            <div class="dropdown-mobile">
+               <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Services<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content-mobile">
+                  <a href="../service.html">All Services</a>
+                  <a href="../service/restaurant.html">Restauntrant</a>
+                  <a href="../service/LodgingPage.html">Lodging</a>
+                  <a href="../service/events.html">Events</a>
+                  <a href="../service/otherService.html">Other Services</a>
+                  <a href="../chatBot.html">Information</a>
+               </div>
+            </div>
+            <div class="dropdown">
+               <li class="drpli"><a href="../attractions.html">Attractions<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content">
+                  <a href="aquarium.html">Aquarium</a>
+                  <a href="building.html">Day Maze</a>
+                  <a href="illusion.html">Illusion</a>
+                  <a href="maze.html">Labyrinth</a>
+                  <a href="planet.html">Planet VR</a>
+                  <a href="rollercoaster.html">Rollercoaster</a>
+               </div>
+            </div>
+            <div class="dropdown-mobile">
+               <li class="drpli-mobile" onclick="adjust_nav_height(this)"><a >Attractions<i class="fa fa-caret-down"></i></a></li>
+               <div class="dropdown-content-mobile">
+                  <a href="../attractions.html">All Attractions</a>
+                  <a href="aquarium.html">Aquarium</a>
+                  <a href="building.html">Day Maze</a>
+                  <a href="attraction/illusion.html">Illusion</a>
+                  <a href="maze.html">Labyrinth</a>
+                  <a href="planet.html">Planet VR</a>
+                  <a href="rollercoaster.html">Rollercoaster</a>
+               </div>
+            </div>
+            <li><a href="../loginSignUP.html">Login/Signup</a></li>
+         </ol>
+        
+ <!--        menu bar when view is shrinked-->
+         <label for="check" class="bar">
+            <span class ="fa fa-bars" id="bars" onclick="open_nav()"></span>
+            <span class="fa fa-times" id="times" onclick="close_nav()"></span>
+         </label>
+    </nav>
+
+   <header class="outer-container">
+    <div class="video-container">
+        <video src="images/illusion.mp4" autoplay loop muted>
+
+        </video>
+    </div>
+    <div class="overlay"></div>
+    <div class="text">
+        <h1> The Illusion of CKYN </h1>
+        <p>CKYN the floating rock gained his consciousness. On his mind, there is nothing as he knows but feels the emotions he does not know.He got relieved when he doesn't get hit by lightning. He got curious when he sees something new and strange.But the thing is he does not have the language to think on his mind. The confusion and all the feelings in CKYN minnd is void yet complex to describe since there is no language and nothing he knows but full of unknown feelings to him. So, in this building, 
+           we tried as much as we can to describe the start of CKYN mind from his perspective.
+        </p>
+    <!--a button to lead you to a video-->    
+    <a href='https://www.youtube.com/watch?v=f6Ix_PREFSY' target="_blank" rel="noopener noreferrer" class="button">Watch Illusion</a> 
+
+    </div>
+   </header>
+
+
+</body>
+</html>
